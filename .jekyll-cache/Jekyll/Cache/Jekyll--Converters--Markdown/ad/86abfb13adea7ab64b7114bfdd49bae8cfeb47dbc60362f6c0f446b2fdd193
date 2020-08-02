@@ -1,0 +1,16 @@
+I"�<p>在本地生成ssh key</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-C</span> <span class="s2">"your_email@email.com"</span>
+</code></pre></div></div>
+
+<p>会让你输入密码并且确认密码</p>
+
+<p>在github中添加生成的key,位置在~/.ssh/id_rsa.pub</p>
+
+<p>测试连接</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-T</span> git@github.com
+</code></pre></div></div>
+
+<p>这时可以使用git clone将github上的项目clone下来了</p>
+:ET

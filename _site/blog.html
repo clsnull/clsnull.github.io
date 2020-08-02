@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+      我是布局文件，文件名是default
+      <nav>
+    
+        <a href="/" >
+            Home
+        </a>
+    
+        <a href="/about.html" >
+            About
+        </a>
+    
+        <a href="/blog.html"  class="current" >
+            Blog
+        </a>
+    
+</nav>
+    <ul>
+    
+      <li>
+        <h2><a href="/2020/08/02/%E5%A6%82%E6%9E%9C%E5%B0%86%E6%9C%AC%E5%9C%B0git%E4%B8%8Egithub%E5%85%B3%E8%81%94%E8%B5%B7%E6%9D%A5.html">如果将本地git与github关联起来</a></h2>
+        <p>在本地生成ssh key</p>
+
+        <p>在本地生成ssh key</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-C</span> <span class="s2">"your_email@email.com"</span>
+</code></pre></div></div>
+
+<p>会让你输入密码并且确认密码</p>
+
+<p>在github中添加生成的key,位置在~/.ssh/id_rsa.pub</p>
+
+<p>测试连接</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-T</span> git@github.com
+</code></pre></div></div>
+
+<p>这时可以使用git clone将github上的项目clone下来了</p>
+
+      </li>
+    
+      <li>
+        <h2><a href="/2020/08/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html">第一篇文章</a></h2>
+        <p>哈哈哈哈，我是内容</p>
+
+        <p>哈哈哈哈，我是内容</p>
+
+      </li>
+    
+      <li>
+        <h2><a href="/2020/02/02/%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%9B%E8%A1%8Cjekyll%E8%BF%9B%E8%A1%8C%E8%B0%83%E8%AF%95.html">使用虚拟机进行jekyll进行调试</a></h2>
+        <p>1、需要将虚拟机的防火墙关闭，或者开放端口</p>
+
+        <p>1、需要将虚拟机的防火墙关闭，或者开放端口</p>
+
+<p>2、启动jekyll时使用命令，请允许公网访问</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll server <span class="nt">--detach</span> <span class="nt">--host</span> 0.0.0.0
+</code></pre></div></div>
+
+<p>3、这里程序会在后台进行，需要退出的时候需要手动关闭进程</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkill <span class="nt">-f</span> jekyll
+</code></pre></div></div>
+
+
+      </li>
+    
+</ul>
+  </body>
+</html>
