@@ -1,13 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-      我是布局文件，文件名是default
-      {% include navigation.html %}
-      {{ content }}
-  </body>
-</html>
+---
+layout: compress
+---
+
+{% assign assets_base_url = site.url %}
+{% if site.cdn.jsdelivr.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
+{% assign assets_images_url = 'src="' | append: assets_base_url | append: "/images" %}
+{% include header.html %}
+    {{ content | replace: 'src="/images', assets_images_url }}
+{% include footer.html %}
