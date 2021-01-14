@@ -5,9 +5,9 @@ baseurl:
 url: https://clsnull.github.io
 date_format: "ordinal"
 title: clsnull
-subtitle: "公众号：闷骚的程序员"
+subtitle: "公众号：我陪你看"
 description: "我是描述！！！！！！！！！！"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
+keywords: clsnull, 遗忘的姓名, 晨曦若梦, 我陪你看, 我陪你测
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -120,17 +120,17 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
-    repo: blog-comments
+    owner: clsnull
+    repo: clsnull.github.io
     oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+        client_id: b597ca18348757e40da1
+        client_secret: 4c7bd29d29123cb99848b866c333a05aa75eb9e1 
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
-    repo: blog-comments
-    clientID: d2e1cbbd298958076462
-    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+    owner: clsnull
+    repo: clsnull.github.io
+    clientID: b597ca18348757e40da1
+    clientSecret: 4c7bd29d29123cb99848b866c333a05aa75eb9e1 
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
