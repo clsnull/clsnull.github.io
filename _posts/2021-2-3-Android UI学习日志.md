@@ -104,5 +104,29 @@ layout_weight:值表示线性分割原本应有长度的权重，要和上面两
 
 ### 2.4、自定义控件
 
-### 3、Fragment
+## 3、Fragment
+
+## 4、ConstraintLayout 约束布局
+
+约束布局ConstraintLayout是一个ViewGroup，可以在API9以上的Android系统使用，它的出现主要是为了解决布局嵌套过多的问题，以灵活的方式定位和调整小部件
+
+注意，约束中不能有循环依赖
+
+### 4.1、Realtive positioning 相对定位
+
+### 4.2、Margins 间距
+
+### 4.3、Centering positioning 居中定位
+
+### 4.4、Circular positioning 角度定位
+
+### 4.5、Visibility behavior 可见性行为
+
+### 4.6、Dimension constraints 纬度尺寸约束
+
+### 4.7、Chains 链
+
+### 4.8、Virtual Helpers objects 虚拟辅助对象
+
+### 4.9、Optimezer优化
 
